@@ -1,0 +1,11 @@
+package br.com.academia;
+
+public class AppAcademia {
+
+	public static void main(String[] args) {
+		
+
+	
+	}
+
+}

@@ -1,0 +1,26 @@
+package br.com.academia.model;
+
+public class Imc {
+	private double peso;
+	private double altura;
+	
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+	
+	public double getPeso() {
+		return this.peso;
+	}
+	
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+	
+	public double getAltura() {
+		return this.altura;
+	}
+	
+	public double calcularImc() {
+		return this.peso /altura*altura;
+	}
+}
