@@ -1,0 +1,25 @@
+package br.com.academia;
+
+import java.time.LocalDate;
+
+import br.com.academia.model.Aluno;
+
+public class AppAcademia {
+
+	public static void main(String[] args) {
+		Aluno alunoJoao = new Aluno ();
+		alunoJoao.setNome("João Pereira");
+		alunoJoao.setAltura(1.89);
+		alunoJoao.setPeso(104);
+		alunoJoao.setDataNascimento(LocalDate.of(2000, 02, 19));
+		System.out.println(alunoJoao.getNome());
+		System.out.println(alunoJoao.getAltura());
+		System.out.println(alunoJoao.getPeso());
+		System.out.println(alunoJoao.getImc());
+		System.out.println(alunoJoao.getStatusImc());
+		System.out.println(alunoJoao.getIdade());
+	    System.out.println(alunoJoao.setGenero("Masculino"));
+	
+	}
+
+}

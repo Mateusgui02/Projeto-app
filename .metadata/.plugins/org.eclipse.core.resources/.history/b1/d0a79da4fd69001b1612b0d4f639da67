@@ -1,0 +1,22 @@
+package br.com.academia;
+
+import br.com.academia.model.Aluno;
+
+public class AppAcademia {
+
+	public static void main(String[] args) {
+		Aluno alunoJoão = new Aluno ();
+		alunoJoão.setNome("joão Pereira");
+		alunoJoão.setAltura(1.8);
+		alunoJoão.setPeso(110);
+		alunoJoão.setDataNascimento(19/02/2000);
+		System.out.println(alunoJoão.getNome());
+		System.out.println(alunoJoão.getAltura());
+		System.out.println(alunoJoão.getPeso());
+		System.out.println(alunoJoão.getImc());
+		System.out.println(alunoJoão.getStatusImc());
+		System.out.println(alunoJoão.getDataNascimento());
+	
+	}
+
+}

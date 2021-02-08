@@ -1,0 +1,21 @@
+package br.com.academia;
+
+import br.com.academia.model.Aluno;
+
+public class AppAcademia {
+
+	public static void main(String[] args) {
+		Aluno alunoJoao = new Aluno ();
+		alunoJoao.setNome("João Pereira");
+		alunoJoao.setAltura(1.8);
+		alunoJoao.setPeso(110);
+		System.out.println(alunoJoao.getNome());
+		System.out.println(alunoJoao.getAltura());
+		System.out.println(alunoJoao.getPeso());
+		System.out.println(alunoJoao.getImc());
+		System.out.println(alunoJoao.getStatusImc());
+	
+	
+	}
+
+}
