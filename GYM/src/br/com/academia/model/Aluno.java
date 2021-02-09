@@ -10,7 +10,7 @@ public class Aluno {
 		private double altura;
 		private String genero;
 		private LocalDate dataNascimento;
-		private int nivelAtividade;
+		private String nivelAtividade;
 	
 		
 		public LocalDate setDataNascimento(LocalDate dataNascimento) {
@@ -56,6 +56,40 @@ public class Aluno {
 		public void setGenero(String genero) {
 			this.genero=genero;
 		}
+		
+		public String getGenero() {
+			return this.genero;
+		}
+		
+		//** Nivel Atividade**//
+		
+		public  void setNivelatividade(String nivelatividade) {
+			
+			if(getGenero().equals("Feminino")){
+				if(getNivelatividade().equals("Leve")){
+					this.nivelAtividade = String.valueOf(1.6);
+				} else if(getNivelatividade().equals("Moderado")){
+					this.nivelAtividade = String.valueOf(1.6);
+				} else if(getNivelatividade().equals("Intensa")){
+					this.nivelAtividade = String.valueOf(1.8);
+				}
+			}
+			
+			
+			if(getGenero().equals("Masculino")){
+				if(getNivelatividade().equals("Leve")){
+					this.nivelAtividade = String.valueOf(1.5);
+				} else if(getNivelatividade().equals("Moderado")){
+					this.nivelAtividade = String.valueOf(1.8);
+				} else if(getNivelatividade().equals("Intensa")){
+					this.nivelAtividade = String.valueOf(2.1);
+				}
+			}
+		}
+		
+		public String getNivelatividade() {
+			return this.nivelAtividade;
+		}
 
 		//***IMC***/
 		public double getImc() {
@@ -65,18 +99,20 @@ public class Aluno {
 		public String getStatusImc() {
 			if (this.getImc() < 18.5) {
 				return "Abaixo do peso";
-			}else if (this.getIdade() > 18.6 && this.getImc() < 25) {
+			}else if (this.getImc() > 18.6 && this.getImc() < 25) {
 				return "Peso ideal";
-			}else if (this.getIdade() >=25 && this.getImc() < 30) {
+			}else if (this.getImc() >=25 && this.getImc() < 30) {
 				return "Levemente Acima do peso";
-			}else if (this.getIdade() >=30 && this.getImc() < 55) {
+			}else if (this.getImc() >=30 && this.getImc() < 55) {
 				return "Obesidade grau I";
-			}else if (this.getIdade() >= 35 && this.getImc() <= 40) {
+			}else if (this.getImc() >= 35 && this.getImc() <= 40) {
 				return "Obesidade grau II (Severa)";
 			}else {
 				return "Obesidade III (Morbida)";	
 			}
-		
 	}
-
+			//**Ncd**//
+		
+		
+		
 }

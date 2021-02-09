@@ -11,13 +11,17 @@ public class AppAcademia {
 		alunoJoao.setNome("João Pereira");
 		alunoJoao.setAltura(1.89);
 		alunoJoao.setPeso(104);
-		alunoJoao.setDataNascimento(LocalDate.of(2000, 02, 19));
+		alunoJoao.setDataNascimento(LocalDate.of(2002, 02, 19));
+		alunoJoao.setGenero("Masculino");
+		alunoJoao.setNivelatividade("Moderado");
 		System.out.println(alunoJoao.getNome());
 		System.out.println(alunoJoao.getAltura());
 		System.out.println(alunoJoao.getPeso());
 		System.out.println(alunoJoao.getImc());
 		System.out.println(alunoJoao.getStatusImc());
 		System.out.println(alunoJoao.getIdade());
+		System.out.println(alunoJoao.getGenero());
+		System.out.println(alunoJoao.getNivelatividade());
 	
 	
 	}
